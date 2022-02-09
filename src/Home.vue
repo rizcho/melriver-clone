@@ -75,6 +75,46 @@
                 </div>
             </div>
 
+        <!-- content 3 -->
+        <div class="relative h-screen">
+            
+            <div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptate?</p>    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptate?</p>    
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptate?</p>    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptate?</p>    
+                </div>
+                <div class="absolute right-6">
+                    <div>
+                        <div class="pt-5 border-t w-88 border-slate-600 ">
+                            <div class="flex justify-between">
+                                <p class="text-7xl ">1,486.4</p>
+                                <p>kgs of COz</p>     
+                            </div>
+                            <div>
+                                <p class="pt-8 text-xl text-slate-500/70">were saved on shipping emmisions offset.</p>
+                            </div>
+                        </div>
+
+                        <div class="pt-5 border-t w-88 border-slate-600 ">
+                            <div class="flex justify-between">
+                                <p class="text-7xl ">1,486.4</p>
+                                <p>kgs of COz</p>     
+                            </div>
+                            <div>
+                                <p class="pt-8 text-xl text-slate-500/70">were saved on shipping emmisions offset.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+
     </div>
 </template>
 
@@ -84,8 +124,8 @@ export default {
     return{
         brands: [
             {name: 'Hills', icon: '1'},
-            {name: 'Hills', icon: '1'},
-            {name: 'Hills', icon: '1'}
+            {name: 'Gunung', icon: '1'},
+            {name: 'Api', icon: '1'}
         ]
     }
     }

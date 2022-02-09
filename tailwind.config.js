@@ -7,7 +7,12 @@ module.exports = {
     extend: {
       colors: {
         'mel1':'#011f2c'
+      },
+
+      spacing: {
+        '88': '22rem'
       }
+      
     },
   },
   plugins: [],
