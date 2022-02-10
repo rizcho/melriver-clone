@@ -50,7 +50,7 @@
                 </div>
                 <div>
                      <div class="flex w-full h-auto border-t border-b ">
-                        <div class="w-1/4" v-for="brand in brands">
+                        <div class="w-1/4" v-for="brand in brands" :key="brand"  >
                             <div class="pt-10 border-r ">
                                 <div class="">
                                 <img src="/public/img/img1.jpg" class="mx-auto transition duration-700 ease-in-out delay-150 rounded-md w-96 hover:scale-110" alt="">
@@ -76,41 +76,47 @@
             </div>
 
         <!-- content 3 -->
-        <div class="relative h-screen">
+        <div class="relative h-350  ">
             
             <div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptate?</p>    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptate?</p>    
+                <div class="text-8xl pt-32 font-semibold px-44">
+                    <p>We're truly</p>    
+                    <p>sustainable.</p>    
                 </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptate?</p>    
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptate?</p>    
+                <div class=" absolute pt-20 right-40  space-y-1 text-xl">
+                    <p>Sustainability is part of Melriver’s DNA since inception. Our ambition is</p>
+                    <p>to safeguard successful, long-term, sustainable brands in balance</p>
+                    <p>between social, environmental, and financial interests.</p>    
+                    <p class="pt-5">We are committed to creating sustainable products that are</p>
+                    <p>authentic, timeless and enduring. We design our products around</p>
+                    <p>circular principles and partner with our suppliers to source</p>
+                    <p>sustainable materials without compromising quality.</p>    
                 </div>
-                <div class="absolute right-6">
-                    <div>
-                        <div class="pt-5 border-t w-88 border-slate-600 ">
-                            <div class="flex justify-between">
-                                <p class="text-7xl ">1,486.4</p>
-                                <p>kgs of COz</p>     
+                <div class="absolute flex bottom-10 right-44 space-x-52">
+                        <div>
+                        <div class="py-8 border-t w-100 border-slate-600" v-for="data in datas" :key="data">
+                            <div class="pt-2 flex justify-between">
+                                <p class="text-7xl "> {{data.number}} </p>
+                                <p> {{data.unit}} </p>     
                             </div>
                             <div>
-                                <p class="pt-8 text-xl text-slate-500/70">were saved on shipping emmisions offset.</p>
+                                <p class="pt-8 text-xl text-slate-500/70"> {{data.txt}} </p>
                             </div>
                         </div>
-
-                        <div class="pt-5 border-t w-88 border-slate-600 ">
-                            <div class="flex justify-between">
-                                <p class="text-7xl ">1,486.4</p>
-                                <p>kgs of COz</p>     
+                        </div>
+                        <div>
+                        <div class="py-8 border-t w-100 border-slate-600" v-for="data in datas" :key="data">
+                            <div class="pt-2 flex justify-between">
+                                <p class="text-7xl "> {{data.number}} </p>
+                                <p> {{data.unit}} </p>     
                             </div>
                             <div>
-                                <p class="pt-8 text-xl text-slate-500/70">were saved on shipping emmisions offset.</p>
+                                <p class="pt-8 text-xl text-slate-500/70"> {{data.txt}} </p>
                             </div>
                         </div>
-
-                    </div>
-                </div>    
+                        </div>
+                </div>
+                    
             </div>
         </div>
 
@@ -126,6 +132,11 @@ export default {
             {name: 'Hills', icon: '1'},
             {name: 'Gunung', icon: '1'},
             {name: 'Api', icon: '1'}
+        ],
+        datas: [
+            {number: '2048', unit: 'km2', txt: 'total forest area protected'},
+            {number: '2048', unit: 'km2', txt: 'total forest area protected'},
+            {number: '2048', unit: 'km2', txt: 'total forest area protected'},
         ]
     }
     }
