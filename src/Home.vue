@@ -5,7 +5,7 @@
             <div class="sticky top-0 flex justify-between px-8 pt-5 ">
                 <div class="flex text-4xl">
                     <p>melriver</p>
-                    <p class="font-normal text-slate-600">/studio</p>
+                    <p class="font-normal hidden sm:visible text-slate-600">/studio</p>
                 </div>
                 <div>
                     <button class="py-2 border rounded-full px-7 hover:bg-slate-400 border-slate-600/90 ">
@@ -24,16 +24,16 @@
         <!-- content 1 -->
             <div class="relative h-screen">              
                 
-                <div class="pt-20 font-semibold text-8xl font px-44">
+                <div class="pt-88 font-semibold text-6xl px-5 sm:px-44 sm:text-8xl">
                     <p>Timeless products,</p>
                     <p>outstanding brands.</p>
                 </div>
-                <div class="pt-20 space-y-1 text-lg tracking-wide font px-44">
+                <div class=" pt-12 space-y-1 text-lg tracking-wide px-5">
                     <p>We craft outstanding direct-to-consumer brands with the common</p>
                     <p>ambition to offer true craftsmanship, timeless products that are</p>
                     <p>carbon neutral - and this without ever making any concessions</p>
                 </div>
-                <div class="absolute bottom-5 right-5">
+                <div class="absolute hidden bottom-5 right-5">
                     <ul class="space-y-5">
                         <li>Lorem ipsum dolor sit amet consectetur elit.</li>
                         <li>Lorem ipsum dolor sit amet consectetur elit.</li>
@@ -44,20 +44,20 @@
             </div>
 
         <!-- content 2 -->
-            <div class="h-screen bg-white text-mel1">
-                <div class="px-5 py-12 text-8xl">
+            <div class="h-screen sm:h-screen bg-white text-mel1">
+                <div class="px-5 sm:py-12 py-5 text-5xl font-semibold sm:text-8xl">
                     <p>Our brands</p>
                 </div>
                 <div>
-                     <div class="flex w-full h-auto border-t border-b ">
-                        <div class="w-1/4" v-for="brand in brands" :key="brand"  >
-                            <div class="pt-10 border-r ">
-                                <div class="">
-                                <img src="/public/img/img1.jpg" class="mx-auto transition duration-700 ease-in-out delay-150 rounded-md w-96 hover:scale-110" alt="">
+                     <div class="flex w-full bg-blue-200 h-auto border-t border-b">
+                        <div class="w-96">
+                            <div class="pt-6 border-r ">
+                                <div class="w-88 mx-auto">
+                                <img src="/public/img/img1.jpg" class="w-88 mx-auto transition duration-700 ease-in-out delay-150 rounded-md hover:scale-110" alt="">
                                 </div>
                                 
-                                <div class="flex justify-between px-10 pt-3 pb-9" >
-                                    <div class="text-2xl font-semibold"> {{brand.name}} </div>
+                                <div class="flex justify-between px-6 pt-3 pb-6" >
+                                    <div class="text-2xl font-semibold">Hills</div>
                                     <div>
                                         <svg xmlns="http://www.w3.org/2000/svg" 
                                             class="w-6 h-6" 
@@ -72,6 +72,26 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="flex justify-between px-5 py-5">
+                    <button class="border border-black rounded-full px-5 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke="currentColor">
+                            <path stroke-linecap="round" 
+                                stroke-linejoin="round" 
+                                stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+                        </svg>
+                    </button>
+                    <button class="border border-black rounded-full px-5 py-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="hover:animate-[wiggle_1s_ease-in-out_infinite] h-6 w-6" fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke="currentColor">
+                            <path stroke-linecap="round" 
+                            stroke-linejoin="round" 
+                            stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
 
@@ -159,11 +179,11 @@
 export default {
     data(){
     return{
-        brands: [
-            {name: 'Hills', icon: '1'},
-            {name: 'Gunung', icon: '1'},
-            {name: 'Api', icon: '1'}
-        ],
+        // brands: [
+        //     {name: 'Hills', icon: '1'},
+        //     {name: 'Gunung', icon: '1'},
+        //     {name: 'Api', icon: '1'}
+        // ],
         datas: [
             {number: '2048', unit: 'km2', txt: 'total forest area protected'},
             {number: '2048', unit: 'km2', txt: 'total forest area protected'},
