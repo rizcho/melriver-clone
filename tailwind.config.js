@@ -5,6 +5,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'ease' },
+          '50%': { transform: 'ease-in' },
+        }
+      },
+
       animation: {
         wiggle: 'wiggle 1s ease-in-out infinite',
       },

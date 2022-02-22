@@ -98,20 +98,20 @@
         <!-- content 3 -->
             <div class="relative h-350">
                 <div>
-                    <div class="text-8xl pt-32 font-semibold px-44">
+                    <div class="sm:text-8xl pt-10 text-5xl sm:pt-32 px-3 font-semibold sm:px-44">
                         <p>We're truly</p>    
                         <p>sustainable.</p>    
                     </div>
-                    <div class=" absolute pt-20 right-40  space-y-1 text-xl">
-                        <p>Sustainability is part of Melriver’s DNA since inception. Our ambition is</p>
-                        <p>to safeguard successful, long-term, sustainable brands in balance</p>
-                        <p>between social, environmental, and financial interests.</p>    
-                        <p class="pt-5">We are committed to creating sustainable products that are</p>
-                        <p>authentic, timeless and enduring. We design our products around</p>
-                        <p>circular principles and partner with our suppliers to source</p>
-                        <p>sustainable materials without compromising quality.</p>    
+                    <div class="absolute sm:pt-20 pt-14 px-2 sm:right-40 space-y-1 text-xl">
+                        <p>Sustainability is part of Melriver’s DNA since inception. Our ambition is
+                        to safeguard successful, long-term, sustainable brands in balance
+                        between social, environmental, and financial interests.</p>    
+                        <p class="pt-5">We are committed to creating sustainable products that are
+                        authentic, timeless and enduring. We design our products around
+                        circular principles and partner with our suppliers to source
+                        sustainable materials without compromising quality.</p>    
                     </div>
-                    <div class="absolute flex bottom-10 right-44 space-x-52">
+                    <div class="absolute hidden flex bottom-10 right-44 space-x-52">
                         <div>
                             <div class="py-8 border-t w-100 border-slate-600" v-for="data in datas" :key="data">
                                 <div class="pt-2 flex justify-between">
@@ -134,6 +134,20 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="absolute sm:hidden flex bottom-20 left-2"> 
+                        <div>
+                            <div class="py-2 border-t w-100 border-slate-600" v-for="data in datas" :key="data">
+                                <div class="flex justify-between">
+                                    <p class="text-5xl "> {{data.number}} </p>
+                                    <p> {{data.unit}} </p>     
+                                </div>
+                                <div>
+                                    <p class="pt-3 pb-5 text-base text-gray-500"> {{data.txt}} </p>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>     
                 </div>
             </div>
@@ -185,9 +199,12 @@ export default {
         //     {name: 'Api', icon: '1'}
         // ],
         datas: [
-            {number: '2048', unit: 'km2', txt: 'total forest area protected'},
-            {number: '2048', unit: 'km2', txt: 'total forest area protected'},
-            {number: '2048', unit: 'km2', txt: 'total forest area protected'},
+            {number: '18,389', unit: 'people', txt: 'became clients of Melriver brands'},
+            {number: '1,846.2', unit: 'kgs of CO2', txt: 'were saved on shipping emissions offset'},
+            {number: '50,304', unit: 'trees', txt: 'equivalent number of tree seedings protected'},
+            {number: '90,500', unit: 'km2', txt: 'total forest area protected since 2020'},
+            {number: '4.91/5', unit: 'avg. rate', txt: 'average rating given by customers of our brands'},
+            {number: '21 billion', unit: 'kms', txt: 'distance traveled by our parcels that we have compensated'}
         ]
     }
     }
